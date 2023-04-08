@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script src="scrip.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/node_modules/hover.css/css/hover.css">
     <script
       src="https://kit.fontawesome.com/8fbadcc80c.js"
       crossorigin="anonymous"
@@ -13,16 +19,18 @@
     <title>My PortFolio</title>
   </head>
   <body>
-    <header>
-      <h1>My PortF<i class="fa-regular fa-face-smile fa-2xs"></i>lio</h1>
-      <ul>
+    <header class="row">
+      <h1 class="col-sm-12 col-md-6 col-lg-6">
+        My PortF<i class="fa-regular fa-face-smile fa-2xs"></i>lio
+      </h1>
+      <ul class="col-sm-12 col-lg-6 col-sm-6">
         <li>
           <a href="#intro" target="_self"
             ><i class="fa-solid fa-house fa-xs"></i>&nbsp; Home</a
           >
         </li>
         <li>
-          <a href="#edu"
+          <a href="#edu" 
             ><i class="fa-solid fa-user-graduate fa-xs"></i>&nbsp; Education</a
           >
         </li>
@@ -38,26 +46,33 @@
         </li>
       </ul>
     </header>
-    <!-- <shade></shade> -->
-    <main>
-      <img class="dp" src="/assets/pp.jpg" alt="profilePhoto  " />
-      <div class="intro" id="intro">
+    <main class="row align-items-center">
+      <!-- Introduction Image-->
+      <div class="col-xs-6 col-sm-4 col-md-4 col-nm-4 col-lg-4 text-center justify-content-center" >
+        <img
+        class=" img-fluid row-align-items-center dp"
+        src="/assets/pp.jpg"
+        alt="profilePhoto  "
+        />
+      </div>
+      <!-- Introduction-->
+      <div class="col-xs-6 col-sm-8 col-md-8 col-nm-8 col-lg-8 text-center" id="intro">
         <h1>Akash Masadi</h1>
-        <h2>FRESHER</h2>
-        <p>
+        <h2 style="color:#999; font-weight: 600;">FRESHER</h2>
+        <p class="container" style=" width:80%;font-size: 1.3rem;">
           I am a student at Sreenidhi Institute of Science & Technology actively
           looking to land in an internship in the Computer Science field. I'm
           highly analytical, enthusiastic, and a teamplayer.
         </p>
-        <section class="connections">
-          <div class="phn">
+        <section class="row text-center align-items-center" style="font-size: 1rem;">
+          <div class="col-sm-12 col-md-12 col-lg-4">
             <a
               href="tel:+917569902122"
               style="letter-spacing: 2px; text-decoration: none"
               ><i class="fa-solid fa-phone fa-xl"></i> +91 75699 02122</a
             >
           </div>
-          <div class="mail">
+          <div class="col-sm-12 col-md-12 col-lg-6">
             <a
               href="mailto: akashmasadi6@gmail.com"
               style="letter-spacing: 2px; text-decoration: none"
@@ -65,41 +80,42 @@
               akashmasadi6@gmail.com</a
             >
           </div>
-          <div class="loc">
+          <div class="col-sm-12 col-md-12 col-lg-2">
             <i class="fa-solid fa-location-dot" title="India"></i> Hyderbad
           </div>
         </section>
       </div>
-      <div class="edu" id="edu">
-        <h1>Education</h1>
-        <div class="box">
-          <div class="edu1">
+      <!-- EDUCATION -->
+      <h1 class="row text-center" id="subheadings">Education</h1>
+      <div class="container" >
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6" id="box">
             <h3><i>Sri Chaitanya Junior College</i></h3>
             <h3>Hyderabad</h3>
             <h4>Intermediate</h4>
             <p>2019-2021</p>
             <p>Percentage: 98.8%</p>
           </div>
-          <div class="edu1">
+          <div class="col-sm-12 col-md-12 col-lg-6" id="box">
             <h3>
               <a
                 href="https://sreenidhi.edu.in/"
                 target="_blank"
                 style="text-decoration: none"
-                ><i>Sreenidhi Institute of Science & Technology</i></a
-              >
+                ><i>Sreenidhi Institute of Science & Technology</i></a>
             </h3>
             <h3>Hyderabad</h3>
             <h4>B.Tech</h4>
             <p>2021-2025</p>
             <p>Consistent CGPA (> 8.5)</p>
-          </div>
+          </div></div>
         </div>
       </div>
-      <div class="skills" id="skills">
-        <h1>Skills</h1>
-        <div class="box">
-          <div class="sk">
+      <!-- Skills -->
+      <div class="skills" >
+        <h1 class="row text-center" id="subheadings">Skills</h1>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6" id="box">
             <h3>Technical Skills</h3>
             <ul>
               <li>C</li>
@@ -110,7 +126,7 @@
               <li>JavaScript</li>
             </ul>
           </div>
-          <div class="sk">
+          <div class="col-sm-12 col-md-12 col-lg-6" id="box">
             <h3>Personal & Professional Skills</h3>
             <ul>
               <li>Problem Solving</li>
@@ -123,10 +139,10 @@
           </div>
         </div>
       </div>
-      <div class="certi" id="certi">
-        <h1>Certifications</h1>
-        <div class="box">
-          <div class="certi1" id="certi1">
+      <!-- Certifications -->
+        <h1 class="row text-center" id="subheadings">Certifications</h1>
+        <div class="row justify-content-evenly" >
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" id="certi">
             <h3>
               <a
                 href="https://www.hackerrank.com/certificates/3f8e546e122e"
@@ -138,7 +154,7 @@
             <h4>Certified by HackerRank</h4>
             <p>2023</p>
           </div>
-          <div class="certi1" id="certi2">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" id="certi">
             <h3>
               <a
                 href="https://www.hackerrank.com/certificates/2219fa5109e7"
@@ -150,7 +166,7 @@
             <h4>Certified by HackerRank</h4>
             <p>2023</p>
           </div>
-          <div class="certi1" id="certi3">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" id="certi">
             <h3>
               <a
                 href="https://www.credly.com/badges/e7197380-dc83-4e34-887d-4e6844209600/public_url"
@@ -163,16 +179,13 @@
             <p>2022</p>
           </div>
         </div>
-      </div>
     </main>
-    <!-- <div class="shadeb"></div> -->
-    <!-- <shade></shade> -->
-    <footer>
-      <cr
+    <footer class="row">
+      <cr class="col-sm-12 col-md-12 col-lg-6 text-center"
         >Copyright &nbsp;<i class="fa-regular fa-copyright"> </i> &nbsp;2023
         Akash Masadi. All rights reserved.</cr
       >
-      <ul class="links">
+      <ul class="col-sm-12 col-md-12 col-lg-6">
         <li>
           <a
             href="https://github.com/akash-masadi/"
@@ -212,5 +225,10 @@
         </li>
       </ul>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
