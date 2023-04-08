@@ -6,7 +6,6 @@ body{
     background-image: url("./assets/bg.jpg");
     background-size: cover;
     width: 100vw;
-    
 }
 *{
     font-family: 'Poppins', sans-serif;
@@ -14,7 +13,7 @@ body{
 header{
     border:3px solid #000;
     color: #fff;
-    width: 100vw;
+    /* width: 105vw; */
     margin:0px 0px;
     padding: 0px 0px;
     background-color: #000;
@@ -127,7 +126,7 @@ main #certi{
 footer{
     background-color: #000;
     height:5rem;
-    width:100vw;
+    /* width:100vw; */
     display: flex;
     justify-content: space-around;
     align-items:center ;
@@ -138,4 +137,12 @@ footer{
         list-style: none;
         width: 30%;
         justify-content: space-around;
+       
+    }
+    footer ul a{
+        color:#fff;
+        text-decoration: none; 
+    }
+    footer ul a:hover{    
+        color:rgb(0, 255, 255);
     }
