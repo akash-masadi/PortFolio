@@ -105,6 +105,16 @@ main #certi{
     margin-left: 4rem;
     align-self: center;
 }
+meter{
+    box-sizing: content-box;
+    border-radius: 20px;
+}
+meter::-webkit-meter-optimum-value {
+    background: rgb(148, 242, 242);
+  }
+  meter::-moz-meter-bar { /* Firefox Pseudo Class */
+    background: rgb(148, 242, 242);
+  }
 @media screen and (max-width: 768px){
     main #box{
         width: 80%;
